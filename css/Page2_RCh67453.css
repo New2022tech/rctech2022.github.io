@@ -1,0 +1,90 @@
+
+/* ////////////////////////////Start of Page 2 styling  ////////////////////////////*/
+#content1{
+    font-size: 30px;
+    text-align: center;
+    clear:both;
+}
+
+/* Creating the list as flex with following properties */
+.containeritems{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+    margin-top: 30px;
+}
+/* Adding the frame to the minicontainer */
+.containeritems div{
+    background: black;
+    padding: 40px;
+    font-size: 13px;
+    font-weight:300;
+    border-right: 10px;
+    border-radius: 13px;
+    transition: background-color 1s, transform .5s ease-in-out;
+    max-width:500px;
+    height:300px;
+}
+
+/* Enlarging the icon that obtain from the webpage */
+.containeritems div i{
+    font-size: 100px;
+    margin-bottom: 30px;
+}
+
+/* Enlarging the title */
+.containeritems div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.containeritems >.items{
+    height:500px;
+}
+/* -------------------------------------------------------------------------------------------- */
+/* ---------------------The hovering effect of the containeritems------------------------------ */
+.containeritems div:hover{
+    background: #90b7e0;
+    transform: translateY(-30px);
+}
+
+/* ---------------------------------------------------------------------------------------- */
+/* Responsive adjustment coding */
+/* mobile */
+
+@media only screen and (max-width: 480px){
+    body[class^="p2responsive"]{
+        display: inline-block;
+        min-height: -webkit-fill-available;
+    }
+    div[class^="container"]{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* tablet */
+@media only screen and (min-width: 481px){
+    body[class^="p2responsive"]{
+        display: inline-block;
+    }
+    div[class^="container"]{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* desktop */
+@media only screen and (min-width: 600px){
+    div[class^="containeritems"]{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+
+}
+@media only screen and (min-width: 1243px){
+    body[class^="p2responsive"]{
+        display: block;
+    }
+}

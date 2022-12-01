@@ -1,0 +1,99 @@
+
+/* ------------------------------------------------------------------------------------------- */
+/* ----------------------------THE PORTFOLIO Styling section !!!!!---------------------------- */
+
+#frame{
+    padding: 50px 0;
+}
+
+.outline{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(500px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.porfolio{
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.porfolio > img{
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.5s;
+}
+
+/* The hovering layer */
+.prompt{
+    display: flex;
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.6),#469dea);
+    position: absolute ;
+    align-items: center;
+    left: 0;
+    bottom: 0;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+    overflow: hidden;
+}
+
+
+.prompt > h3{
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+/*The text within the layer  */
+.prompt > a{
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background-color: rgb(70, 237, 198);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+/* the hovering effect on the image */
+.porfolio:hover img{
+    transform: scale(1.1);
+}
+
+/* the hovering effect of the layer */
+.porfolio:hover .prompt{
+    height:100%;
+}
+
+/* ------------------------------------------------------------------------------------------- */
+/* mobile */
+@media only screen and (max-width: 480px){
+    body[class^="p3responsive"]{
+        display: inline-block;
+        min-height: -webkit-fill-available;
+    }
+}
+
+/* tablet */
+@media only screen and (min-width: 481px){
+    div[class^="outline"]{
+        display: flex;
+        flex-direction: column;
+    }
+}
+/* desktop*/
+@media only screen and (min-width: 730px){
+    body[class^="p3responsive"]{
+        display: inline-block;
+    }
+    div[class^="outline"]{
+        display: flex;
+        flex-direction: row;
+    }
+}

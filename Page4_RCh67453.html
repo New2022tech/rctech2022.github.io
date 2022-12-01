@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Ryan Chan My Porfolio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link href="css/index_RCh67453.css" rel="stylesheet">
+        <link href="css/Page2_RCh67453.css" rel="stylesheet">
+        <link href="css/Page3_RCh67453.css" rel="stylesheet">
+        <link href="css/Page4_RCh67453.css" rel="stylesheet">
+        <script src="script/Page4_RCh67453.js"></script>
+        <!-- ------Adding this external script to retrive the free UI from online ------ -->
+        <script src="https://kit.fontawesome.com/7c68ed48a0.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="p4responsive">
+            <!-- ------------------------------------------------------------------------------------------ -->
+            <!-- ------------------------------------------------------------------------------------------ -->
+            <!-- ----------------------------Top of the page (Navigation section)--------------------------- -->
+            <div id="section1">
+                <div class="container">
+                    <div class="logoimage">
+                        <img src="images/FullLogo_Transparent.png" alt="logoimage" id="logo" width="250px" height="200px">
+                    </div>
+                    <nav>
+                        <ul class="navfont">
+                            <div class="iconbt">
+                                <div class="icon"><i class="fa-solid fa-house-chimney"></i></div>
+                                <li><a href = "index.html">Home</a></li>
+                            </div>
+                            <div class="iconbt">
+                                <div class="icon"><i class="fa-solid fa-handshake-angle"></i></div>
+                                <li><a href = "Page2_RCh67453.html">Service</a></li>
+                            </div>
+                            <div class="iconbt">
+                                <div class="icon"><i class="fa-solid fa-palette"></i></div>
+                                <li><a href = "Page3_RCh67453.html">Porfolio</a></li>
+                            </div>
+                            <div class="iconbt">
+                                <div class="icon"><i class="fa-solid fa-address-card"></i></div>
+                                <li><a href = "Page4_RCh67453.html">Contact</a></li>
+                            </div>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- ------------------------------------------------------------------------------------------------------- -->
+            <!-- ------------------------------------------------------------------------------------------------------- -->
+            <!-- -----------------------------------Start of Contact Me Section----------------------------------------- -->
+            <div id = "content1">
+                <h1>Contact Me</h1>
+            </div>
+                <section id="section2">
+                    <form name="form" action='' method="get">
+                        <legend>Your Contact Details</legend>
+                        <div>
+                            <input type="text" name="Name" id="Name" class="formbg" placeholder="Pleas enter your name" required>
+                        </div>
+
+                        <div>
+                            <input type="text" name="mobile" id="mobile" class="formbg" pattern="^\d{10}" placeholder="Please enter your mobile number xxx-xxx-xxxx" required>
+                        </div>
+                        <div>
+                            <input type="text" name="email" id="email" class="formbg" placeholder="Please enter your e-mail xxx@email.com" required>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="radio" value="val1" required>Prefer contact via mobile
+                            <input type="radio" name="radio" value="val2" required>Prefer contact via e-mail
+                            <input type="radio" name="radio" value="val3" required>Prefer contact in person
+                        </div>
+                        <div>
+                        <legend>Enquires Details</legend>
+                            <input type="date" name="date" id="date" class="formbg" required>
+                        </div>
+                            <div class="textarea">
+                                <textarea name="Enquires" rows="5" cols="100" class="formbg" placeholder="Feel free to leave a message or a enquiers that you would like to know"></textarea>
+                            </div>
+
+                        <div id="bottomkey">
+                            <input type="submit" name="submit" class="btnkey" value="Submit Data" onClick="return validation(this.form)">
+                            <input type="reset" name="reset" class="btnkey" value="Clear Output">
+                        </div>
+                    </form>
+                </section>
+            <!-- -----------------------------------End of Contact Me Section------------------------------------------- -->
+            <!-- ------------------------------------------------------------------------------------------------------- -->
+            <!-- ------------------------------------------------------------------------------------------------------- -->
+            <footer>
+            <strong><em>CSIS 1280 &copy;designed by Ryan Chan</em></strong>
+        </footer>
+    </body>
+</html>

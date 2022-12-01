@@ -1,0 +1,86 @@
+/* ------------------------------------------------------------------------------------------------------- */
+/* Start of form filling style setting */
+#section2{
+    display:flex;
+    justify-content: center;
+}
+
+form{
+    display:block;
+    overflow: hidden;
+    max-width: 600px;
+}
+fieldset{
+    max-width: 200px;
+    min-height: 200px;
+}
+fieldset > div{
+    display:flex;
+    flex-flow: row wrap;
+}
+fieldset div>*{
+    flex: 1 0 100px;
+    margin: 10px 10px;
+}
+legend{
+    background-color: #3f8fe4;
+    padding: 8px;
+    border-radius: 0.5em;
+    color:black;
+}
+
+.formbg{
+    background: #262626;
+    width: 95%;
+    height: 100%;
+    padding: 3%;
+    color:antiquewhite;
+}
+.radio{
+    display: flex;
+    padding: 1%;
+    color:antiquewhite;
+    background: #262626;
+    justify-content: space-around;
+    font-size: smaller;
+}
+textarea.formbg{
+    height:200px;
+}
+
+#bottomkey{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btnkey{
+    background-color: #3f8fe4;
+    color:antiquewhite;
+    border-radius: 10px;
+    width: 40%;;
+}
+
+/* inline CSS validation checking */
+input.formbg:focus:invalid{
+    border: solid 4px red;
+}
+
+
+/* End of form style setting */
+/* ------------------------------------------------------------------------------------------------------- */
+/* Media query for Page4 */
+/* Responsive adjustment coding */
+/* mobile */
+@media only screen and (max-width: 480px){
+    body[class^="p4responsive"]{
+        display: inline-block;
+    }
+    h1{
+        font-size:xxx-large;
+    }
+}
+@media only screen and (min-width: 730px){
+    body[class^="p4responsive"]{
+        display: block;
+    }
+}
